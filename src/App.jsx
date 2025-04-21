@@ -4,6 +4,7 @@ import { TodoList } from "./components/TodoList"
 import { ThemeToggle } from "./components/ThemeToggle"
 import { ProductList } from "./components/ProductList"
 import { ShoppingCart } from "./components/ShoppingCart"
+import { Auth } from "./components/Auth"
 import { selectTheme } from "./features/theme/themeSlice"
 import "./App.css"
 
@@ -25,11 +26,26 @@ function App() {
         </div>
 
         <div className="app-section">
+          <h1 className="section-title">3. Toggle Theme</h1>
+          <div className="theme-demo-container">
+            <p>
+              Chế độ hiện tại: <strong>{theme === "light" ? "Sáng" : "Tối"}</strong>
+            </p>
+            <p>Bạn có thể chuyển đổi chế độ bằng nút ở góc trên bên phải.</p>
+          </div>
+        </div>
+
+        <div className="app-section">
           <h1 className="section-title">4. Shopping Cart</h1>
           <div className="shop-container">
             <ProductList />
             <ShoppingCart />
           </div>
+        </div>
+
+        <div className="app-section">
+          <h1 className="section-title">5. Quản lý user đăng nhập</h1>
+          <Auth />
         </div>
       </div>
     </div>
