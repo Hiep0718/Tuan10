@@ -897,7 +897,7 @@
   color: white;
 }
 
-.user-avatar {
+.user-card-header .user-avatar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -908,6 +908,7 @@
   border-radius: 50%;
   font-weight: bold;
   font-size: 1.25rem;
+  border: none;
 }
 
 .user-card-header h3 {
@@ -923,6 +924,125 @@
   margin: 0.5rem 0;
   font-size: 0.875rem;
   color: var(--text);
+}
+
+/* Calculator Styles */
+.calculators-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.calculator-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+}
+
+.calculator-tab {
+  flex: 1;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.calculator-tab:hover {
+  background-color: var(--bg);
+}
+
+.calculator-tab.active {
+  background-color: var(--primary);
+  color: white;
+}
+
+.calculator-content {
+  padding: 0;
+}
+
+.calculator-container {
+  padding: 1.5rem;
+}
+
+.calculator-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.calculator-form {
+  margin-bottom: 1.5rem;
+}
+
+.calculator-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.calculator-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.calculator-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background-color: var(--card-bg);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.calculator-result {
+  background-color: var(--bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.result-header {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+  text-align: center;
+}
+
+.result-value {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.result-category {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.result-explanation {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.result-explanation ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.result-explanation li {
+  margin-bottom: 0.25rem;
 }
 
 /* Input focus styles */

@@ -6,6 +6,7 @@ import { ProductList } from "./components/ProductList"
 import { ShoppingCart } from "./components/ShoppingCart"
 import { Auth } from "./components/Auth"
 import { UsersList } from "./components/UsersList"
+import { Calculators } from "./components/Calculators"
 import { selectTheme } from "./features/theme/themeSlice"
 import "./App.css"
 
@@ -52,6 +53,11 @@ function App() {
         <div className="app-section">
           <h1 className="section-title">6. Đồng bộ dữ liệu từ API</h1>
           <UsersList />
+        </div>
+
+        <div className="app-section">
+          <h1 className="section-title">7. Các công cụ tính toán</h1>
+          <Calculators />
         </div>
       </div>
     </div>
