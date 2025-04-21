@@ -1,15 +1,19 @@
-import React from 'react'
-import './App.css'
-import { Counter } from './components/counter'
-import { TodoList } from './components/TodoList'
+import { useSelector } from "react-redux"
+import { TodoList } from "./components/TodoList"
+import { ThemeToggle } from "./components/ThemeToggle"
+import { selectTheme } from "./features/theme/themeSlice"
+import "./App.css"
+import { Counter } from "./components/counter"
 
 function App() {
+  const theme = useSelector(selectTheme)
 
   return (
-    <>
-     {/* <Counter /> */}
-     <TodoList/>
-    </>
+    <div className={`app-container ${theme}`}>
+      <ThemeToggle />
+      <Counter/>
+      <TodoList />
+    </div>
   )
 }
 
