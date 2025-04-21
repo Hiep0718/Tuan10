@@ -5,6 +5,7 @@ import { ThemeToggle } from "./components/ThemeToggle"
 import { ProductList } from "./components/ProductList"
 import { ShoppingCart } from "./components/ShoppingCart"
 import { Auth } from "./components/Auth"
+import { UsersList } from "./components/UsersList"
 import { selectTheme } from "./features/theme/themeSlice"
 import "./App.css"
 
@@ -46,6 +47,11 @@ function App() {
         <div className="app-section">
           <h1 className="section-title">5. Quản lý user đăng nhập</h1>
           <Auth />
+        </div>
+
+        <div className="app-section">
+          <h1 className="section-title">6. Đồng bộ dữ liệu từ API</h1>
+          <UsersList />
         </div>
       </div>
     </div>
