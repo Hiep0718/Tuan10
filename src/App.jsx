@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux"
-import { Counter } from "./components/counter"
+import { Counter } from "./components/Counter"
 import { TodoList } from "./components/TodoList"
 import { ThemeToggle } from "./components/ThemeToggle"
 import { ProductList } from "./components/ProductList"
@@ -39,7 +39,11 @@ function App() {
         </div>
 
         <div className="app-section">
-          <h1 className="section-title">4. Shopping Cart</h1>
+          <h1 className="section-title">4. Shopping Cart kết hợp nhiều Slice</h1>
+          <p className="section-description">
+            Minh họa cách kết hợp nhiều slice Redux (products, cart, auth) để tạo ứng dụng hoàn chỉnh. Người dùng có thể
+            tìm kiếm, lọc sản phẩm, thêm vào giỏ hàng và áp dụng mã giảm giá.
+          </p>
           <div className="shop-container">
             <ProductList />
             <ShoppingCart />

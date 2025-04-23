@@ -7,6 +7,7 @@ import authReducer from "../features/auth/authSlice"
 import usersReducer from "../features/users/usersSlice"
 import calculatorsReducer from "../features/calculators/calculatorsSlice"
 import eventsReducer from "../features/events/eventsSlice"
+import productReducer from "../features/products/productsSlice"
 
 export const store = configureStore({
   reducer: {
@@ -18,5 +19,6 @@ export const store = configureStore({
     users: usersReducer,
     calculators: calculatorsReducer,
     events: eventsReducer,
+    products: productReducer,
   },
 })
