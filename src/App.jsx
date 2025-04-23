@@ -7,6 +7,7 @@ import { ShoppingCart } from "./components/ShoppingCart"
 import { Auth } from "./components/Auth"
 import { UsersList } from "./components/UsersList"
 import { Calculators } from "./components/Calculators"
+import { EventManager } from "./components/EventManager"
 import { selectTheme } from "./features/theme/themeSlice"
 import "./App.css"
 
@@ -58,6 +59,11 @@ function App() {
         <div className="app-section">
           <h1 className="section-title">7. Các công cụ tính toán</h1>
           <Calculators />
+        </div>
+
+        <div className="app-section">
+          <h1 className="section-title">8. Quản lý sự kiện</h1>
+          <EventManager />
         </div>
       </div>
     </div>
